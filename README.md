@@ -3,7 +3,7 @@ OnsetRP code, based on the work of frederic2ec: https://github.com/frederic2ec/o
 
 All credits belongs to him and his contributors.
 
-# Info
+# Infos
 This project is a rework of the gamemode made by frederic2ec.
 
 Goals:
