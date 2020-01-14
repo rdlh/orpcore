@@ -1,4 +1,10 @@
 {
 	"author": "Soljian",
-	"version": "0.1"
+	"version": "0.1",
+	"server_scripts": [
+		"_misc/s_config.lua",
+		"_misc/s_database.lua",
+		"player_management/s_player.lua",
+		"player_management/s_character.lua"
+	]
 }
