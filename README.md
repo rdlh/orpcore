@@ -25,6 +25,13 @@ Important:
 
 ---
 
+# State of WIP
+
+- Player and character management, saving of player datas, position management : done
+- Inventory : in progress ..
+
+---
+
 # [FR] ORPCore - WIP
 OnsetRP Core, basé sur le travail de frederic2ec : https://github.com/frederic2ec/onsetrp
 
