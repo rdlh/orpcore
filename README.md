@@ -30,6 +30,10 @@ Important:
 - Player and character management, saving of player datas, position management : done
 - Inventory : in progress ..
 
+
+
+
+
 ---
 
 # [FR] ORPCore - WIP
