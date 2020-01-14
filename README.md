@@ -1,5 +1,5 @@
 # [EN] ORPCore - WIP
-OnsetRP code, based on the work of frederic2ec: https://github.com/frederic2ec/onsetrp
+OnsetRP Core, based on the work of frederic2ec: https://github.com/frederic2ec/onsetrp
 
 All credits belongs to him and his contributors.
 
@@ -26,7 +26,7 @@ Important:
 ---
 
 # [FR] ORPCore - WIP
-OnsetRP Code, basé sur le travail de frederic2ec : https://github.com/frederic2ec/onsetrp
+OnsetRP Core, basé sur le travail de frederic2ec : https://github.com/frederic2ec/onsetrp
 
 Tous les crédits lui revienne ainsi qu'a ses contributeurs.
 
