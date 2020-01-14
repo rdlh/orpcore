@@ -14,6 +14,9 @@ Goals:
 - Clean up the code by making good use of good practices.
 - Redesign the database for more flexibility for future developments.
 
+Important:
+- The database is built from the intranet. An import script will be added.
+
 ## Dependencies
 ### Internals
 - 
@@ -37,6 +40,9 @@ Objectifs :
 - Pouvoir gérer les packages unitairement.
 - Mettre au propres le code en faisant un bon usage des bonnes pratiques.
 - Refondre la base de données pour plus de souplesses pour les développements futurs.
+
+Importants:
+- La base de données est construite à partir de l'intranet. Un script d'import sera ajouté.
 
 ## Dépendances
 ### Internes
