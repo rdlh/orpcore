@@ -1,7 +1,16 @@
-### Progress
+### Todo-list and status
 - :white_check_mark: Player and character management, saving of player datas, position management
 - :soon: Inventory, items management
 - Bank accounts, cash management
+- Vitals management (hunger, thirst)
+- Vehicles management, garages, fuel
+- Vehicle inventories
+- World time and weather
+- Chat tools (ooc, admin, say, etc)
+- Clothings management
+- Api documentation for external modules and developers
+- Whitelist system
+- .. and more to come. Suggestions ? → Discord
 
 # [EN] ORPCore - WIP
 OnsetRP Core, based on the work of frederic2ec: https://github.com/frederic2ec/onsetrp
