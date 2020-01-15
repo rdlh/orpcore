@@ -1,3 +1,8 @@
+### Progress
+- :white_check_mark: Player and character management, saving of player datas, position management
+- :soon: Inventory, items management
+- Bank accounts, cash management
+
 # [EN] ORPCore - WIP
 OnsetRP Core, based on the work of frederic2ec: https://github.com/frederic2ec/onsetrp
 
@@ -49,16 +54,3 @@ Importants:
 - 
 ### Externes
 - ORPCore Intranet → https://github.com/Sheaven/orpcore_intranet
-
----
-
-# State of WIP
-
-- Player and character management, saving of player datas, position management : done
-- Inventory : in progress ..
-
-
-
-
-
----
