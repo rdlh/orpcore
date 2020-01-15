@@ -52,6 +52,7 @@ function OnPackageStart()-- Save characters automatically
         local nb = 0
         for k, v in pairs(GetAllPlayers()) do
             SavePlayerDatas(v)
+            SavePlayerInventory(v) -- → Inventory
             nb = nb + 1
         end
         print("[ORPCORE - Player] Saving player datas " .. tostring(os.date('%Y-%m-%d %H:%M:%S')) .. ' (' .. nb .. ')')

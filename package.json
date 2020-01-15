@@ -2,9 +2,16 @@
 	"author": "Soljian",
 	"version": "0.1",
 	"server_scripts": [
+		"_includes/json.lua",
+		"_includes/lua_tools.lua",
 		"_misc/s_config.lua",
 		"_misc/s_database.lua",
 		"player_management/s_player.lua",
-		"player_management/s_character.lua"
+		"player_management/s_character.lua",
+		"inventory_management/s_inventory.lua"
+	],
+	"client_scripts": [
+		"_includes/json.lua",
+		"_includes/lua_tools.lua"
 	]
 }

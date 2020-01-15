@@ -4,6 +4,7 @@ function OnPlayerQuit(player)-- Let's destroy the player to save some space
     if Players[player] == nil then return end
     
     SavePlayerDatas(player) -- Save player infos before leave
+    SavePlayerInventory(player) -- → Inventory
     Players[player] = nil
     print('[ORPCORE - Player] Data destroyed → ' .. GetPlayerName(player) .. ' (' .. player .. ')')
 end
@@ -115,7 +116,9 @@ function SetActiveCharacter(player, character)-- #8 We got the active character,
     Players[player].ActiveCharacter.Thirst = character.thirst
     Players[player].ActiveCharacter.CreatedAd = character.created_at
     Players[player].ActiveCharacter.Position = {x = character.pos_x, y = character.pos_y, z = character.pos_z, h = character.pos_h}
+    Players[player].ActiveCharacter.Inventory = LoadInventoryFromPlayer(player, character.id) -- → Inventory
 
+    print(json_encode(Players[player].ActiveCharacter.Inventory))
 
     -- Things that will happen when a character is loaded. Typically, tp on last known position.
     SetPlayerLocation(player, Players[player].ActiveCharacter.Position.x, Players[player].ActiveCharacter.Position.y, Players[player].ActiveCharacter.Position.z + 200)
