@@ -24,3 +24,8 @@ DEV_MODE = 1              -- Will activate the commands to control the core
 CHAR_MAX = 1          -- Number of characters a player is allowed to create
 CHAR_TIMER_AUTOSAVE = 30                                      -- In seconds
 CHAR_DEFAULT_SPAWN = { x= 125773, y= 80246, z= 1645, h= 0} -- Default spawn
+
+---------------------------------------------------------------------------
+-- INVENTORY --------------------------------------------------------------
+---------------------------------------------------------------------------
+INVENTORY_MAX_BASE_WEIGHT = 32                              -- In kilograms
