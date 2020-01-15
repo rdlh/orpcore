@@ -10,6 +10,7 @@
 - Clothings management
 - Api documentation for external modules and developers
 - Whitelist system
+- Complete logs system
 - .. and more to come. Suggestions ? → Discord
 
 # [EN] ORPCore - WIP
