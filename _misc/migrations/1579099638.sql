@@ -1,3 +1,4 @@
+-- Create Character table
 CREATE TABLE IF NOT EXISTS `orpcore_character` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `player_id` int(11) NOT NULL,

@@ -1,3 +1,4 @@
+-- Create Inventory table
 CREATE TABLE IF NOT EXISTS `orpcore_inventory` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `_character_id` int(11) NOT NULL,

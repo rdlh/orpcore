@@ -15,9 +15,7 @@ local function OnPackageStart()
 		-- Immediately stop the server if we cannot connect
 		ServerExit()
 	end
-
-	MigrateIdNeeded()
-
+	
 	CallEvent("database:connected")
 end
 AddEvent("OnPackageStart", OnPackageStart)

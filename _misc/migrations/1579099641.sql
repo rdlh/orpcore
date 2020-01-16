@@ -1,3 +1,4 @@
+-- Create Position table
 CREATE TABLE IF NOT EXISTS `orpcore_position` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `_character_id` int(11) DEFAULT NULL,

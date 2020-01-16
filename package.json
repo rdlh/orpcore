@@ -6,6 +6,7 @@
 		"_includes/lua_tools.lua",
 		"_misc/s_config.lua",
 		"_misc/s_database.lua",
+		"_misc/migrations/main.lua",
 		"players/s_player.lua",
 		"players/s_character.lua",
 		"players/s_vitals.lua",

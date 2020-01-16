@@ -1,3 +1,4 @@
+-- Create Items table
 CREATE TABLE IF NOT EXISTS `orpcore_item` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `name` varchar(20) COLLATE utf8mb4_unicode_ci NOT NULL,

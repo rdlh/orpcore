@@ -1,3 +1,4 @@
+-- Create Bans table
 CREATE TABLE IF NOT EXISTS `orpcore_bans` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `release_date` datetime DEFAULT NULL,
