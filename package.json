@@ -6,9 +6,10 @@
 		"_includes/lua_tools.lua",
 		"_misc/s_config.lua",
 		"_misc/s_database.lua",
-		"player_management/s_player.lua",
-		"player_management/s_character.lua",
-		"inventory_management/s_inventory.lua"
+		"players/s_player.lua",
+		"players/s_character.lua",
+		"players/s_vitals.lua",
+		"items/s_inventory.lua"
 	],
 	"client_scripts": [
 		"_includes/json.lua",
