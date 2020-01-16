@@ -1,8 +1,9 @@
 ### Todo-list and status
 - :white_check_mark: Player and character management, saving of player datas, position management
 - :white_check_mark: Inventory, items management
-- Bank accounts, cash management
-- :soon: Vitals management (hunger, thirst)
+- :soon: Bank accounts, cash management
+- :white_check_mark: Vitals management (hunger, thirst)
+- Uses of items
 - Vehicles management, garages, fuel
 - Vehicle inventories
 - World time and weather
