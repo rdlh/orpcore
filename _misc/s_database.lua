@@ -16,6 +16,8 @@ local function OnPackageStart()
 		ServerExit()
 	end
 
+	MigrateIdNeeded()
+
 	CallEvent("database:connected")
 end
 AddEvent("OnPackageStart", OnPackageStart)
