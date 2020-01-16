@@ -129,6 +129,6 @@ if DEV_MODE == 1 then
 end
 
 -- EXPORTS
-AddFunctionExport("OrpcoreAddItemToPlayerInventory", AddItemToPlayerInventory)-- To add an item with quantity to a player
-AddFunctionExport("OrpcoreRemoveItemFromPlayerInventory", RemoveItemFromPlayerInventory)-- To remove an item with quantity from a player
-AddFunctionExport("OrpcoreGetCurrentInventoryFromPlayer", GetCurrentInventoryFromPlayer)-- To get the current inventory of a player
+AddFunctionExport("ORCAddItemToPlayerInventory", AddItemToPlayerInventory)-- To add an item with quantity to a player
+AddFunctionExport("ORCRemoveItemFromPlayerInventory", RemoveItemFromPlayerInventory)-- To remove an item with quantity from a player
+AddFunctionExport("ORCGetCurrentInventoryFromPlayer", GetCurrentInventoryFromPlayer)-- To get the current inventory of a player

@@ -5,6 +5,7 @@ function OnPlayerQuit(player)-- Let's destroy the player to save some space
     
     SavePlayerDatas(player) -- Save player infos before leave
     SavePlayerInventory(player) -- → Inventory
+    DestroyFoodVitalsTimer(player) -- → Vitals
     Players[player] = nil
     print('[ORPCORE - Player] Data destroyed → ' .. GetPlayerName(player) .. ' (' .. player .. ')')
 end
@@ -118,11 +119,12 @@ function SetActiveCharacter(player, character)-- #8 We got the active character,
     Players[player].ActiveCharacter.Position = {x = character.pos_x, y = character.pos_y, z = character.pos_z, h = character.pos_h}
     Players[player].ActiveCharacter.Inventory = LoadInventoryFromPlayer(player, character.id) -- → Inventory
 
-    print(json_encode(Players[player].ActiveCharacter.Inventory))
-
     -- Things that will happen when a character is loaded. Typically, tp on last known position.
     SetPlayerLocation(player, Players[player].ActiveCharacter.Position.x, Players[player].ActiveCharacter.Position.y, Players[player].ActiveCharacter.Position.z + 200)
     SetPlayerHeading(player, Players[player].ActiveCharacter.Position.h)
+
+    -- Initialize some stuffs
+    if Players[player].ActiveCharacter.TimerFoodDeplete == nil then InitFoodVitalsDepleting(player) end -- → Vitals 
     
     -- TODO : Trigger something client side to hide the loading screen we should have :)
     AddPlayerChat(player, "Welcome "..Players[player].ActiveCharacter.Firstname.." "..Players[player].ActiveCharacter.Lastname)    
@@ -132,6 +134,6 @@ end
 
 
 -- EXPORTS
-AddFunctionExport("OrpcoreGetPlayerDatasFromPlayer", GetPlayerDatasFromPlayer)-- To get player datas
+AddFunctionExport("ORCGetPlayerDatasFromPlayer", GetPlayerDatasFromPlayer)-- To get player datas
 
 -- TODO : Add functions to update the player datas from external package or protect it in some ways by adding specific data function like AddMoney()

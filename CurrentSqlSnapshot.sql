@@ -108,6 +108,12 @@ CREATE TABLE IF NOT EXISTS `orpcore_position` (
 
 -- Les données exportées n'étaient pas sélectionnées.
 
-/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
-/*!40014 SET FOREIGN_KEY_CHECKS=IF(@OLD_FOREIGN_KEY_CHECKS IS NULL, 1, @OLD_FOREIGN_KEY_CHECKS) */;
-/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+-- Listage des données de la table orp_core.orpcore_item : ~2 rows (environ)
+DELETE FROM `orpcore_item`;
+/*!40000 ALTER TABLE `orpcore_item` DISABLE KEYS */;
+INSERT INTO `orpcore_item` (`id`, `name`, `is_usable`, `is_equipable`, `effect_on_health`, `effect_on_hunger`, `effect_on_thirst`, `weight`) VALUES
+	(1, 'food_apple', 1, 0, 0, 10, 0, 100),
+	(2, 'food_water_bottle', 1, 0, 0, 0, 50, 100),
+	(3, 'med_bandage', 1, 0, 20, 0, 0, 50),
+	(4, 'base_cash_unit', 0, 0, 0, 0, 0, 1);
+/*!40000 ALTER TABLE `orpcore_item` ENABLE KEYS */;

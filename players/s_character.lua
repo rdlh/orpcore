@@ -107,14 +107,8 @@ function OnNewCharacterLoaded(player) -- Set the new character as active in → 
     GetLoadedCharacterAndSetActive(player)
 end
 
-
 -- Commands
-if DEV_MODE == 1 then
-    AddCommand("getvitals", function(player) -- HUD
-        local playerDatas = GetPlayerDatasFromPlayer(player)
-        AddPlayerChat(player, "Health: " .. playerDatas.ActiveCharacter.Health .. " Hunger: " .. playerDatas.ActiveCharacter.Hunger .. " Thirst: " .. playerDatas.ActiveCharacter.Thirst)
-    end)
-    
+if DEV_MODE == 1 then    
     AddCommand("register", function(player, firstname, lastname) -- Create new character
         if GetPlayerDatasFromPlayer(player).ActiveCharacter ~= nil then
             AddPlayerChat(player, "You already have a character. You can't create a new one.")          
@@ -128,3 +122,4 @@ if DEV_MODE == 1 then
     end)
 
 end
+
