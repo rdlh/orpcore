@@ -13,6 +13,7 @@
 	],
 	"client_scripts": [
 		"_includes/json.lua",
-		"_includes/lua_tools.lua"
+		"_includes/lua_tools.lua",
+		"c_tests.lua"
 	]
 }
